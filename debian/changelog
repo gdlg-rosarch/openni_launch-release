@@ -1,0 +1,105 @@
+ros-indigo-openni-launch (1.9.8-0saucy) saucy; urgency=high
+
+  * [feat] adding depth_registered_filtered injection #26 <https://github.com/ros-drivers/openni_launch/issues/26>
+  * [sys][Travis CI] Update config to using industrial_ci with Prerelease Test. #28 <https://github.com/ros-drivers/openni_launch/issues/28>
+  * Contributors: Jonathan Bohren, Isaac I.Y. Saito
+
+ -- Isaac I.Y. Saito <130s@2000.jukuin.keio.ac.jp>  Sat, 07 May 2016 07:00:00 -0000
+
+ros-indigo-openni-launch (1.9.7-0saucy) saucy; urgency=high
+
+  * 1st ROS Jade release
+  * [sys] Add a simple travis config
+  * Contributors: Isaac I.Y. Saito
+
+ -- Isaac I.Y. Saito <130s@2000.jukuin.keio.ac.jp>  Sun, 15 Nov 2015 08:00:00 -0000
+
+ros-indigo-openni-launch (1.9.6-0saucy) saucy; urgency=high
+
+  * [feat] adjust frame ids to TF2
+  * [fix] Removes the leading '/' from the TF frames in case tf_prefix is empty, which fixes this error:
+    [ WARN] [1432284298.914340788]: TF2 exception:
+    Invalid argument "/camera_rgb_optical_frame" passed to lookupTransform argument target_frame in tf2 frame_ids cannot start with a '/' like:  (/camera/camera_nodelet_manager)
+    Actually, tf_prefix is now ignored altogether.
+  * Contributors: Jack O'Quin, Jonathan Binney, Martin Günther
+
+ -- Isaac I.Y. Saito <130s@2000.jukuin.keio.ac.jp>  Tue, 27 Oct 2015 07:00:00 -0000
+
+ros-indigo-openni-launch (1.9.5-0saucy) saucy; urgency=high
+
+  * Test the ROS launch files, fix some errors (#10 <https://github.com/ros-drivers/openni_launch/issues/10>).
+  * Fix errors found by roslaunch unit test (#10 <https://github.com/ros-drivers/openni_launch/issues/10>).
+  * Add unit tests for launch file dependencies.
+  * Contributors: Jack O'Quin, jonbinney
+
+ -- Julius Kammerl <jkammerl@willowgarage.com>  Fri, 18 Apr 2014 07:00:00 -0000
+
+ros-indigo-openni-launch (1.9.4-0saucy) saucy; urgency=high
+
+  * Fix missing run_depend.
+  * Contributors: Marcus Liebhardt, jonbinney
+
+ -- Julius Kammerl <jkammerl@willowgarage.com>  Mon, 26 Aug 2013 01:04:00 -0000
+
+ros-indigo-openni-launch (1.9.3-0saucy) saucy; urgency=high
+
+  * Switch to rgbd_launch.
+  * Added sw_registration and hw_registration flags.
+  * Modified the top level file to use internal file names.
+  * device.launch is now internal.
+  * Added deprecation notice about rgb.launch.
+  * Deprecation notices about the move of common launch files to rgbd_launch.
+  * Added tf prefix resolution.
+  * Contributors: Piyush Khandelwal, jonbinney
+
+ -- Julius Kammerl <jkammerl@willowgarage.com>  Mon, 26 Aug 2013 00:49:00 -0000
+
+ros-indigo-openni-launch (1.9.2-0saucy) saucy; urgency=high
+
+  * Fix device registered point cloud generation.
+  * Disabled unregistered depth and disparity processing when
+    depth_registration is set to true.
+  * Fixing xyzrgb pointcloud generation when device registration is
+    enabled.
+  * Contributors: Piyush Khandelwal, jonbinney
+
+ -- Julius Kammerl <jkammerl@willowgarage.com>  Thu, 01 Aug 2013 07:00:00 -0000
+
+ros-indigo-openni-launch (1.9.1-0saucy) saucy; urgency=high
+
+  * Allow proper usage of namespaces for openni's nodes and nodelets.
+  * Add arguments for switching on/off each processing module.
+  * Removes (assumed) duplicated depth nodelets include thereby removing
+    service registration error.
+  * Add topic remappings to sort the versious nodelets i/o (i.e. depth, rgb etc.).
+  * Add option of utilising the worker threads parameter for the nodelet manager.
+  * Moves nodelet_manager into camera namespace.
+  * Contributors: Marcus Liebhardt, jonbinney
+
+ -- Julius Kammerl <jkammerl@willowgarage.com>  Mon, 29 Jul 2013 07:00:00 -0000
+
+ros-indigo-openni-launch (1.9.0-0saucy) saucy; urgency=high
+
+
+
+ -- Julius Kammerl <jkammerl@willowgarage.com>  Thu, 27 Jun 2013 07:00:00 -0000
+
+ros-indigo-openni-launch (1.8.3-0saucy) saucy; urgency=high
+
+  * Catkinizing openni_launch.
+  * Moved manager setup to manager.launch. Added options load_driver and
+    publish_tf for suppressing the driver and/or default tf tree, to
+    better support bag file playback and calibration.
+  * Moved launching of all processing nodelets from device.launch to new
+    processing.launch for better reusability, for example bag file
+    playback.
+  * Use 'respawn' arg instead of 'bond' (deprecated). Conforms to
+    image_proc and stereo_image_proc launch files, and now attempts to
+    respawn loaders when bonds are enabled. Removed rgb.launch, using
+    image_proc.launch instead.
+  * Initial commit of openni_launch as unary stack.
+  * Contributors: Jonathan Binney, Julius Kammerl, Michael Ferguson, Patrick Mihelich, jbinney
+
+ -- Julius Kammerl <jkammerl@willowgarage.com>  Thu, 03 Jan 2013 08:00:00 -0000
+
+
