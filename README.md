@@ -1,3 +1,26 @@
+## openni_launch (indigo) - 1.9.8-0
+
+The packages in the `openni_launch` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo openni_launch` on `Sat, 07 May 2016 23:59:35 -0000`
+
+The `openni_launch` package was released.
+
+Version of package(s) in repository `openni_launch`:
+
+- upstream repository: https://github.com/ros-drivers/openni_launch.git
+- release repository: https://github.com/ros-gbp/openni_launch-release.git
+- rosdistro version: `1.9.7-0`
+- old version: `1.9.7-0`
+- new version: `1.9.8-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## openni_launch (jade) - 1.9.7-0
 
 The packages in the `openni_launch` repository were released into the `jade` distro by running `/usr/bin/bloom-release --rosdistro jade --track jade openni_launch` on `Wed, 18 Nov 2015 03:13:24 -0000`
