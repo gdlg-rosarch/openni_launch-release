@@ -1,3 +1,26 @@
+## openni_launch (kinetic) - 1.9.8-0
+
+The packages in the `openni_launch` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic openni_launch` on `Sun, 08 May 2016 02:21:29 -0000`
+
+The `openni_launch` package was released.
+
+Version of package(s) in repository `openni_launch`:
+
+- upstream repository: https://github.com/ros-drivers/openni_launch.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.9.8-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## openni_launch (jade) - 1.9.8-0
 
 The packages in the `openni_launch` repository were released into the `jade` distro by running `/usr/bin/bloom-release --rosdistro jade --track jade openni_launch` on `Sun, 08 May 2016 00:12:35 -0000`
